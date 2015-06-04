@@ -1,0 +1,134 @@
+<div class="grid">
+  <div class="grid-box container">
+    <div class="grid-item">
+      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
+        <div class="grid-item-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
+          <h3 class="title">Academy</h3>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
+        <div class="grid-item-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
+          <h3 class="title">Documentation</h3>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
+        <div class="grid-item-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
+          <h3 class="title">Knowledge Base</h3>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
+        <div class="grid-item-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
+          <h3 class="title">Forum</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid-box container">
+    <div class="grid-item">
+      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
+        <div class="grid-item-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
+          <h3 class="title">Academy</h3>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
+        <div class="grid-item-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
+          <h3 class="title">Academy</h3>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
+        <div class="grid-item-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
+          <h3 class="title">Academy</h3>
+        </div>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300);">
+        <div class="grid-item-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
+          <h3 class="title">Academy</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid-box container">
+    <div class="grid-item grid-item-medium">
+      <div class="grid-item-box">
+        <div class="grid-item-content news-slider-box">
+          {% for post in site.posts %}
+          <article><time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
+          {% endfor %}
+          <h2 class="news-slider-title">Latest news</h2>
+          <div class="news-slider-container">
+            <div class="news-slider" id="news">
+              <!-- repeat this for each post, replace image path -->
+              <div class="news-slide" style="background-image: url(http://lorempixel.com/450/450/cats);">
+                <p class="news-date"><i class="glyphicon glyphicon-calendar"></i> Jun 1, 2015</p>
+                <p class="news-description">It was some time before he obtained any answer, and the reply, when made, was unpropitious.</p>
+              </div>
+              <!-- ./end post-->
+              <div class="news-slide" style="background-image: url(http://lorempixel.com/450/450/technics);">
+                <p class="news-date"><i class="glyphicon glyphicon-calendar"></i> Jun 1, 2015</p>
+                <p class="news-description">It was some time before he obtained any answer, and the reply, when made, was unpropitious.</p>
+              </div>
+              <div class="news-slide" style="background-image: url(http://lorempixel.com/450/450/sports);">
+                <p class="news-date"><i class="glyphicon glyphicon-calendar"></i> Jun 1, 2015</p>
+                <p class="news-description">It was some time before he obtained any answer, and the reply, when made, was unpropitious.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="grid-item grid-item-medium">
+      <div class="grid-item-box grid-item-box-no-fade widget-twitter">
+        <div class="grid-item-content">
+          <div class="widget-twitter-box">
+
+            <div class="widget-twitter-header clearfix">
+              <img src="/img/icon-twitter.png" alt="jahia twitter" class="logo"/>
+              <a href="#" class="btn btn-danger pull-right">Follow</a>
+            </div>
+            <div class="widget-twitter-content">
+              <div class="list-group list-group-tweets">
+                <div class="list-group-item">
+                  <h4 class="list-group-item-heading">@Jahia_academy</h4>
+                  <p class="list-group-item-text">Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily. <a href="http://twitter/">#Quote</a></p>
+                </div>
+                <div class="list-group-item">
+                  <h4 class="list-group-item-heading">@Jahia_academy</h4>
+                  <p class="list-group-item-text">Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily. <a href="http://twitter/">#Quote</a></p>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xs-6 col-xs-offset-3">
+                    <button class="btn btn-danger btn-lg btn-block">Load more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

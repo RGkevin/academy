@@ -1,0 +1,71 @@
+.grid
+  position: relative
+
+  .grid-box
+    margin-bottom: 10px
+
+  .grid-item
+    float: left
+    display: block
+    width: 25%
+    margin: 0
+
+    &:first-child
+
+      .grid-item-box
+        margin-left: 0
+
+    &.grid-item-medium
+      width: 50%
+
+.grid-item-box
+  margin-left: 10px
+  text-align: center
+  min-height: 200px
+  position: relative
+  overflow: hidden
+  background: #f0f0f0 top center no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  display: block
+  text-decoration: none
+
+  &:after
+    content: ' '
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(15, 156, 212, .4)
+
+  &.grid-item-box-no-fade
+
+    &:after
+      background-color: transparent
+
+.grid-item-medium
+
+  .grid-item-box
+    min-height: 450px
+
+.grid-item-content
+  z-index: 2
+  position: absolute
+  left: 15px
+  right: 15px
+  bottom: 15px
+  color: #fff
+  text-align: left
+
+  .title
+    font-size: 38px
+    margin-bottom: 0
+    margin-top: 10px
+
+  p
+    font-size: 14px
+    line-height: 16px
+
+
