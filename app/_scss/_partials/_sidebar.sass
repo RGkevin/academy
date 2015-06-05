@@ -1,0 +1,42 @@
+.sidebar
+  background-color: #53c2ee
+  padding: 25px
+
+  +clearfix()
+
+.widget
+  color: #fff
+  margin-bottom: 15px
+  position: relative
+
+  h3
+    margin-top: 5px
+    font-size: 18px
+    margin-bottom: 10px
+
+  .widget-box
+    padding: 10px
+
+  &.widget-mark:before
+    content: ' '
+    display: block
+    position: absolute
+    border-left: solid 10px #fff
+    border-bottom: solid 10px transparent
+    border-top: solid 10px transparent
+    left: -25px
+    top: 16px
+
+  ul
+
+    > li
+      display: block
+      float: none
+
+      > a
+        color: #fff
+        padding: 5px 10px
+
+        &:hover,
+        &:focus
+          background-color: transparent

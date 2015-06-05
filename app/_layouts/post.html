@@ -15,12 +15,12 @@ layout: default
         </div>
         <article class="post">
           {{ content }}
+          {% include comments.html %}
         </article>
-        {% include comments.html %}
       </div>
     </div>
     <div class="col-xs-4">
-      <div class="sidebar-post"></div>
+      {% include sidebar.html %}
     </div>
   </div>
 </div>
