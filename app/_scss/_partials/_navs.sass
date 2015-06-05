@@ -9,3 +9,32 @@
       display: inline-block
       padding: 2px
       margin: 0 4px 0 0
+
+
+.nav-labels
+
+  > li
+    float: left
+    display: block
+    margin-right: 10px
+
+    > a
+      color: #fff
+      padding: 5px 12px
+      font-weight: bold
+      font-size: 16px
+      box-shadow: 2px 2px 1px rgba(0, 0, 0, .3)
+
+      &.link-primary
+        background-color: $brand-primary
+      &.link-danger
+        background-color: $brand-danger
+      &.link-warning
+        background-color: $brand-warning
+      &.link-success
+        background-color: $brand-success
+      &.link-info
+        background-color: $brand-info
+      &.link-default
+        background-color: #8887AE
+

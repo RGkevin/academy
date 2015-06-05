@@ -1,7 +1,7 @@
 <div class="grid">
   <div class="grid-box container">
     <div class="grid-item">
-      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
+      <div class="grid-item-box" style="background-image: url(/img/sample/ja_8-1.jpg);">
         <div class="grid-item-content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
           <h3 class="title">Academy</h3>
@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="grid-item">
-      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
+      <div class="grid-item-box" style="background-image: url(/img/sample/ja_7-1.jpg);">
         <div class="grid-item-content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
           <h3 class="title">Documentation</h3>
@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="grid-item">
-      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
+      <div class="grid-item-box" style="background-image: url(/img/sample/ja_6-1.jpg);">
         <div class="grid-item-content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
           <h3 class="title">Knowledge Base</h3>
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="grid-item">
-      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
+      <div class="grid-item-box" style="background-image: url(/img/sample/ja_5-1.jpg);">
         <div class="grid-item-content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
           <h3 class="title">Forum</h3>
@@ -33,40 +33,7 @@
       </div>
     </div>
   </div>
-  <div class="grid-box container">
-    <div class="grid-item">
-      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
-        <div class="grid-item-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
-          <h3 class="title">Academy</h3>
-        </div>
-      </div>
-    </div>
-    <div class="grid-item">
-      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
-        <div class="grid-item-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
-          <h3 class="title">Academy</h3>
-        </div>
-      </div>
-    </div>
-    <div class="grid-item">
-      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300/technics);">
-        <div class="grid-item-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
-          <h3 class="title">Academy</h3>
-        </div>
-      </div>
-    </div>
-    <div class="grid-item">
-      <div class="grid-item-box" style="background-image: url(http://lorempixel.com/300/300);">
-        <div class="grid-item-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, odio.</p>
-          <h3 class="title">Academy</h3>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <div class="grid-box container">
     <div class="grid-item grid-item-medium">
       <div class="grid-item-box">
@@ -76,7 +43,7 @@
             <div class="news-slider" id="news">
               {% for post in site.posts %}
               <!-- repeat this for each post, replace image path -->
-              <div class="news-slide" style="background-image: url(http://lorempixel.com/450/450/cats);">
+              <div class="news-slide" style="background-image: url({{ post.image }});">
                 <p class="news-date"><i class="glyphicon glyphicon-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}</p>
                 <a href="{{ post.url }}" class="news-description">{{ post.title }}</a>
               </div>
