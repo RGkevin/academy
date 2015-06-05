@@ -71,26 +71,17 @@
     <div class="grid-item grid-item-medium">
       <div class="grid-item-box">
         <div class="grid-item-content news-slider-box">
-          {% for post in site.posts %}
-          <article><time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
-          {% endfor %}
           <h2 class="news-slider-title">Latest news</h2>
           <div class="news-slider-container">
             <div class="news-slider" id="news">
+              {% for post in site.posts %}
               <!-- repeat this for each post, replace image path -->
               <div class="news-slide" style="background-image: url(http://lorempixel.com/450/450/cats);">
-                <p class="news-date"><i class="glyphicon glyphicon-calendar"></i> Jun 1, 2015</p>
-                <p class="news-description">It was some time before he obtained any answer, and the reply, when made, was unpropitious.</p>
+                <p class="news-date"><i class="glyphicon glyphicon-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}</p>
+                <a href="{{ post.url }}" class="news-description">{{ post.title }}</a>
               </div>
               <!-- ./end post-->
-              <div class="news-slide" style="background-image: url(http://lorempixel.com/450/450/technics);">
-                <p class="news-date"><i class="glyphicon glyphicon-calendar"></i> Jun 1, 2015</p>
-                <p class="news-description">It was some time before he obtained any answer, and the reply, when made, was unpropitious.</p>
-              </div>
-              <div class="news-slide" style="background-image: url(http://lorempixel.com/450/450/sports);">
-                <p class="news-date"><i class="glyphicon glyphicon-calendar"></i> Jun 1, 2015</p>
-                <p class="news-description">It was some time before he obtained any answer, and the reply, when made, was unpropitious.</p>
-              </div>
+              {% endfor %}
             </div>
           </div>
         </div>

@@ -1,6 +1,28 @@
 ---
 layout: default
 ---
-<article class="post">
-{{ content }}
-</article>
+
+{% include header.html %}
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8">
+      {% include breadcrumb.html %}
+      {% include post-info.html %}
+      <div class="post-container">
+        <div class="post-date-box">
+          <strong>{{ page.date | date: "%-d" }}</strong>
+          <span>{{ page.date | date: "%b" }}</span>
+        </div>
+        <article class="post">
+          {{ content }}
+        </article>
+        {% include comments.html %}
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="sidebar-post"></div>
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}
