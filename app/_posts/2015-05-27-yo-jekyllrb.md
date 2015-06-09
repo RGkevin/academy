@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Yo Jekyll!"
-categories: jekyll update
+categories: academy update
 image: /img/sample/ja_2-1.jpg
 ---
 
