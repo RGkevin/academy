@@ -38,7 +38,10 @@
     left: 0
     right: 0
     bottom: 0
-    background-color: rgba(15, 156, 212, .4)
+    background-color: rgba(15, 156, 212, .3)
+
+    +transition-property(all)
+    +transition-duration(350ms)
 
   &.grid-item-box-no-fade
 
@@ -58,14 +61,36 @@
   bottom: 15px
   color: #fff
   text-align: left
+  overflow: hidden
 
   .title
-    font-size: 38px
+    font-size: 30px
     margin-bottom: 0
     margin-top: 10px
+    font-family: 'Open Sans', sans-serif
+    font-weight: bold
 
   p
     font-size: 14px
     line-height: 16px
 
 
+a.grid-item-box
+
+  .grid-item-content p
+    top: 150px
+    position: relative
+
+    +opacity(0)
+    +transition-property(all)
+    +transition-duration(350ms)
+
+  &:hover
+
+    &:after
+      background-color: rgba(15, 156, 212, .6)
+
+    .grid-item-content p
+      top: 0
+
+      +opacity(1)
